@@ -1,0 +1,22 @@
+import random 
+data=["rock","paper","scissor"]
+comp=random.choice(data)
+print(comp)
+user=int(input("Enter your choice \n 1.rock \n 2.paper \n 3.scissor"))
+if user ==1:
+    user = "rock"
+elif user == 2:
+    user ="paper"
+else:
+    user = "scissors"
+print("user selected",user)
+print("Computer selected",comp)
+
+if user==comp:
+    print("It is a tie")
+elif (user=="rock" and comp=="scissors")or\
+     (user=="paper" and comp=="rock")or\
+     (user=="scissors" and comp=="paper"):
+         print("user wins")
+else:
+    print("Comp Wins")
